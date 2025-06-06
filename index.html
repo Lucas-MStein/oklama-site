@@ -5,10 +5,11 @@
   <title>Oklama Style</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <script type="module" crossorigin src="/oklama-site/assets/index-b12e800a.js"></script>
-  <link rel="stylesheet" href="/oklama-site/assets/index-2f04fc07.css">
+  <script type="module" crossorigin src="/oklama-site/assets/index-d9070e6d.js"></script>
+  <link rel="stylesheet" href="/oklama-site/assets/index-b6806071.css">
 </head>
 <body class="relative min-h-screen bg-gray-400 text-white overflow-x-hidden">
+
 <!-- Zentral platziertes Coverbild -->
 <img src="/oklama-site/160402.jpg" alt="Cover" class="absolute top-1/2 left-1/2 w-32 h-32 -translate-x-1/2 -translate-y-1/2 object-cover shadow-lg rounded" />
 
@@ -18,6 +19,7 @@
     <path d="M9 3H4a1 1 0 0 0-1 1v3h20V6a1 1 0 0 0-1-1h-8l-2-2z" />
     <path d="M3 8h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8z" />
   </svg>
+  <p class="text-xs mt-2">Audio</p>
 </div>
 
 <!-- Ordner 2: Letter (unten rechts) -->
@@ -26,10 +28,11 @@
     <path d="M4 4h16v16H4z" />
     <path d="M22,6 L12,13 L2,6" />
   </svg>
+  <p class="text-xs mt-2">Letter</p>
 </div>
 
-<!-- Contentbereich mit max-Höhe und mobilem Scroll -->
-<div id="content" class="absolute bottom-6 left-1/2 -translate-x-1/2 w-full max-w-md px-4 text-center max-h-[70vh] overflow-y-auto"></div>
+<!-- Contentbereich: mehrere Inhalte überlappend -->
+<div id="content-wrapper" class="absolute bottom-6 left-1/2 -translate-x-1/2 w-full max-w-md px-4 flex flex-col gap-4 items-center pointer-events-auto z-50"></div>
 
 
 </body>
