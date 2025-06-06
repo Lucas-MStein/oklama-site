@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Oklama Style</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/style.css" rel="stylesheet" />
+</head>
+<body class="relative min-h-screen bg-gray-400 text-white overflow-hidden">
+<!-- Zentral platziertes Coverbild -->
+<img src="/160402.jpg" alt="Cover" class="absolute top-1/2 left-1/2 w-32 h-32 -translate-x-1/2 -translate-y-1/2 object-cover shadow-lg rounded" />
+
+<!-- Ordner 1: Audio (oben links) -->
+<div class="absolute top-8 left-8 folder" onclick="showAudio()">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M9 3H4a1 1 0 0 0-1 1v3h20V6a1 1 0 0 0-1-1h-8l-2-2z" />
+    <path d="M3 8h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8z" />
+  </svg>
+</div>
+
+<!-- Ordner 2: Spotify (unten rechts) -->
+<div class="absolute bottom-8 right-8 folder" onclick="showLetter()">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M4 4h16v16H4z" />
+    <path d="M22,6 L12,13 L2,6" />
+  </svg>
+</div>
+
+<!-- Contentbereich unten zentriert -->
+<div id="content" class="absolute bottom-6 left-1/2 -translate-x-1/2 w-full max-w-md px-4 text-center"></div>
+
+<script type="module" src="/main.js"></script>
+</body>
+</html>
