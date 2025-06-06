@@ -2,25 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Basis-Layout */
+html {
+  @apply scroll-smooth;
+}
+
 body {
-  @apply bg-black text-white flex items-center justify-center min-h-screen;
+  @apply bg-black text-white min-h-screen overflow-x-hidden;
 }
 
-button {
-  @apply m-4 p-4 rounded-full border-2 border-white hover:bg-white hover:text-black transition-all;
+/* Optional: Nur auf größeren Screens zentrieren */
+@screen md {
+  body {
+    @apply flex items-center justify-center;
+  }
 }
 
+/* Ordner-Button */
 .folder {
   @apply w-24 h-24 bg-white text-black rounded-lg shadow-lg flex flex-col items-center justify-center cursor-pointer hover:scale-105 transition-transform;
-}
-
-.icon {
-  @apply text-3xl;
 }
 
 .folder:hover {
   @apply ring-2 ring-yellow-300;
 }
+
 .folder:active {
   @apply scale-95;
+}
+
+/* Optional: Button-Fallbacks, falls du sie zusätzlich nutzt */
+button {
+  @apply m-4 p-4 rounded-full border-2 border-white hover:bg-white hover:text-black transition-all;
+}
+
+.icon {
+  @apply text-3xl;
 }
