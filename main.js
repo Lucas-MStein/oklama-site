@@ -3,7 +3,7 @@ function showAudio() {
   const content = document.getElementById("content");
   content.innerHTML = `
     <audio controls autoplay>
-      <source src="/TEN%20BAD%20BITCHES_%20v1_Master.wav" type="audio/wav">
+      <source src="/TEN_BAD_BITCHES.wav" type="audio/wav">
       Dein Browser unterstützt kein Audio.
     </audio>
   `;
