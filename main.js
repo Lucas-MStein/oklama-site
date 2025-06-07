@@ -1,15 +1,15 @@
-// Audio-Inhalt einfügen
 function showAudio() {
   const content = document.getElementById("content");
+  const audioPath = `${import.meta.env.BASE_URL}TEN_BAD_BITCHES.wav`;
+
   content.innerHTML = `
     <audio controls autoplay>
-      <source src="/TEN_BAD_BITCHES.wav" type="audio/wav">
+      <source src="${audioPath}" type="audio/wav">
       Dein Browser unterstützt kein Audio.
     </audio>
   `;
 }
 
-// Brief-Inhalt einfügen
 function showLetter() {
   const content = document.getElementById("content");
   content.innerHTML = `
@@ -26,7 +26,7 @@ function showLetter() {
 window.showAudio = showAudio;
 window.showLetter = showLetter;
 
-// Klick auf leeren Bereich → Inhalt entfernen
+// Klick auf leere Fläche → Inhalte ausblenden
 document.addEventListener("click", (event) => {
   const isFolder = event.target.closest(".folder");
   const isContent = event.target.closest("#content");
