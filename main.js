@@ -1,6 +1,6 @@
 function showAudio() {
   const content = document.getElementById("content");
-  const audioPath = `${import.meta.env.BASE_URL}TEN_BAD_BITCHES.wav`;
+  const audioPath = `${import.meta.env.BASE_URL}TEN_BAD_BITCHES_v2_Master.wav`;
 
   content.innerHTML = `
     <audio controls autoplay>
